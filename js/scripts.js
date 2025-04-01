@@ -37,7 +37,7 @@ const calculateAge = (start_date) => {
   const ageDate = new Date(ageDifMs);
   return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
-document.getElementById('yr-xp').html = calculateAge('2015-01-01');
+document.getElementById('yr-xp').innerHTML = calculateAge('2015-01-01');
 
 
 });
