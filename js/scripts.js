@@ -32,12 +32,12 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 
-const calculateAge = (start_date) => {
+const calculateExperience = (start_date) => {
   const ageDifMs = Date.now() - new Date(start_date).getTime();
   const ageDate = new Date(ageDifMs);
   return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
-document.getElementById('yr-xp').innerHTML = calculateAge('2015-01-01');
+document.getElementById('yr-xp').innerHTML = calculateExperience('2015-01-01');
 
 
 });
